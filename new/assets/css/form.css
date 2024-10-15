@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Navigation Arrows */
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation i {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.navigation i:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons button {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* 3D rise effect on button hover */
+.auth-buttons button:hover {
+    transform: translateY(-5px) scale(1.05); /* Buttons rise and slightly enlarge on hover */
+    background-color: #FFD700; /* Button color changes on hover */
+}
+
+.content {
+    padding-top: 100px;
+}
+
+
+/* Form styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    /* Add the bouncing animation to the entire form container */
+    animation: bounce 3s infinite ease-in-out;
+}
+
+ .heropage img{   
+ width: 100%;
+ height: 90vh;
+ image-rendering: auto;
+ image-orientation: inherit;
+ image-orientation: from-image;
+
+}
+.texthead{
+    margin-bottom: 40%;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending at the original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px at the peak of the bounce */
+    }
+}
+
+.form-box {
+    perspective: 1000px;
+    width: 400px; /* Increased form width */
+    height: 500px; /* Increased form height */
+    position: relative;
+}
+
+.form-box .login-form,
+.form-box .signup-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 30px; /* Added more padding inside the form */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.login-form {
+    transform: rotateY(0deg);
+}
+
+.signup-form {
+    transform: rotateY(180deg);
+}
+
+/* Styling the input fields */
+input {
+    margin-bottom: 20px; /* Increased spacing between input fields */
+    padding: 15px; /* Increased padding for input fields */
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling the buttons */
+button {
+    padding: 15px; /* Increased button padding */
+    background-color: #00BFFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #f0f0f0;
+    font-size: 18px; /* Increased font size of the button text */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #FFD700;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Adjust spacing for the text within the form */
+p {
+    margin-top: 10px;
+    font-size: 14px; /* Increased font size for the text inside the form */
+    text-align: center;
+}
+
+/* Adjust the spacing of span (login/signup links) */
+p span {
+    cursor: pointer;
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+/* 3D Flip Effect */
+.form-box.flipped .login-form {
+    transform: rotateY(180deg);
+}
+
+.form-box.flipped .signup-form {
+    transform: rotateY(0deg);
+}
+ 

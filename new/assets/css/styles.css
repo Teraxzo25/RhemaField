@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Navigation Arrows */
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation i {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.navigation i:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: url('assets/images/Ai image.jpg') center/cover no-repeat;
+    height: 200%;
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section, .section-one, .section-two, .featured-section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* For Scrolling Animation */
+.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*hero section*/
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.hero-section .btn-3d {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn-3d:hover {
+    transform: translateY(-5px) scale(1.05); /* Buttons rise and slightly enlarge on hover */
+    background-color: #FFD700; /* Button color changes on hover */
+}
+
+/* Feature Boxes */
+.feature-box {
+    padding: 20px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #FFD700;
+}
+
+
+
+/* About Us Specific */
+.about-section h3 {
+    color: #800080;
+    font-size: 2rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-section img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .rounded-circle {
+    border: 2px solid #FFD700;
+}
+
+.about-section .mt-3 {
+    color: #00BFFF;
+    font-size: 1.2rem;
+}

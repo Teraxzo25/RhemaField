@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academics at Rhemafield Schools - Nursery and Primary Education">
+    <meta name="keywords" content="Academics, Nursery, Primary, Education">
+    <meta name="author" content="Rhemafield Schools">
+    <title>Academics | Rhemafield Schools</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/new/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: url(../new/assets/image/Background\ branco\ orgânico\ _\ Vetor\ Grátis.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hover-img {
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hover-img:hover {
+            transform: scale(1.05);
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../new/assets/image/WhatsApp Image 2024-10-05 at 8.11.08 AM.jpeg" alt="Rhemafield Schools Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nursery Section -->
+    <section class="section">
+        <div class="container text-center fade-in">
+            <h2 class="section-title">Nursery Education</h2>
+            <p>Our nursery program offers a warm and nurturing environment where children learn through play and exploration.</p>
+            <img src="../new/assets/image/nursery.jpg" alt="Nursery Education" class="hover-img img-fluid" style="max-width: 80%;">
+
+            <h3 class="mt-4">Subjects Offered:</h3>
+            <ul class="list-unstyled">
+                <li>Early Literacy and Phonics</li>
+                <li>Mathematics Readiness</li>
+                <li>Creative Arts</li>
+                <li>Social Studies</li>
+                <li>Physical Education</li>
+            </ul>
+
+            <h3 class="mt-4">Standard Exams:</h3>
+            <p>At the end of nursery education, children are assessed using internal evaluations to determine readiness for primary school.</p>
+        </div>
+    </section>
+
+    <!-- Primary Section -->
+    <section class="section">
+        <div class="container text-center fade-in">
+            <h2 class="section-title">Primary Education</h2>
+            <p>Our primary education focuses on holistic development, ensuring that each child reaches their full potential.</p>
+            <img src="../new/assets/image/primary.jpg" alt="Primary Education" class="hover-img img-fluid" style="max-width: 80%;">
+
+            <h3 class="mt-4">Subjects Offered:</h3>
+            <ul class="list-unstyled">
+                <li>English Language</li>
+                <li>Mathematics</li>
+                <li>Basic Science</li>
+                <li>Social Studies</li>
+                <li>Civic Education</li>
+                <li>Creative Arts</li>
+                <li>Physical Education</li>
+            </ul>
+
+            <h3 class="mt-4">Standard Exams:</h3>
+            <p>At the end of primary education, students sit for the Common Entrance Examination (CEE) to qualify for secondary school.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section text-center fade-in">
+        <div class="container">
+            <h3>Ready to enroll?</h3>
+            <p>You can apply online by filling out <a href="application-form.html">this form</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Rhemafield Schools. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('fade-in');
+                }, index * 200); // Stagger the fade-in effect
+            });
+        });
+    </script>
+</body>
+
+</html>

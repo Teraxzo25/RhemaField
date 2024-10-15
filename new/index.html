@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rhemafield Schools - Excellence in Education">
+    <meta name="keywords" content="School, Education, Rhemafield Schools, Admissions">
+    <meta name="author" content="Rhemafield Schools">
+    <title>Rhemafield Schools | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/new/assets/css/icon-font.css">
+    <link rel="stylesheet" href="/new/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<style>
+
+.section-about{
+    background-color: scolor-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.heading-secondary{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba(36, 206, 36, 0.788), rgba(15, 199, 15, 0.788));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.2);
+        text-shadow: .5rem 1rem 2rem rgba(rgb(22, 20, 20), .2);
+    }
+}
+
+.u-center-text{
+    text-align: center;
+}
+.card-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card-container {
+        width: 300px;
+        height: 400px;
+        perspective: 1000px; /* Enables 3D effect */
+    }
+
+    /* Card Front & Back */
+    .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.8s ease-in-out; /* Smooth flip transition */
+    }
+
+    .card-front,
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Hides the back side when not visible */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px;
+        color: white;
+    }
+
+    .card-front {
+        background: linear-gradient(hsla(246, 89%, 50%, 0.801),
+        hsla(180, 88%, 47%, 0.801));
+    }
+
+    .card-back {
+        background: linear-gradient(hsla(59, 98%, 53%, 0.801),
+        hsla(180, 88%, 47%, 0.801));
+        transform: rotateY(180deg); /* This flips the back side */
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 50%;
+    }
+
+    .btn-flip {
+        padding: 10px 20px;
+        background-color: #333;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-flip:hover {
+        background-color: #FFC107;
+    }
+
+    /* Corrected flip effect */
+    .card.flip {
+        transform: rotateY(180deg); /* Flips the card */
+    }
+
+    /* Button Styles */
+    .btn-back {
+        background-color: #333;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-back:hover {
+        background-color: #666;
+    }
+
+</style>
+<body style="background-image: url(../new/assets/image/5e768a1a-a11e-4e8a-9d26-83676ff3da28.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+">
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container" style="position: relative;">
+            <a class="navbar-brand" href="index.html">
+                <img src="../new/assets/image/WhatsApp Image 2024-10-05 at 8.11.08 AM.jpeg" alt="Rhemafield Schools Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" 
+    style="background-color: black;
+    border-bottom-right-radius: 30vh ;
+    border-bottom-left-radius:  30vh ;
+    border-bottom-width: 10vh;
+    padding: 25vh 6vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-image: url(../new/assets/image/Into\ The\ Spider\ Verse.gif);
+    font-weight: bolder;
+    font-size: larger;
+    ;">
+        <div class="container text-center">
+            <h1 class="display-4" style="color: rgb(238, 238, 16);">Welcome to Rhemafield Schools</h1>
+            <p class="lead" style="color: white;">Shaping the future through excellence in education.</p>
+            <a href="admissions.html" class="btn btn-primary btn-3d">Join Us Today</a>
+        </div>
+    </section> <br>
+
+    <!-- Featured Sections -->
+    <section class="featured-section py-5" style="margin-top: 10vh;background-color: aliceblue;
+    padding: 10px 10px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-school fa-3x"></i>
+                        <h3>About Us</h3>
+                        <p>Learn more about our history and mission.</p>
+                        <a href="about.html" class="btn btn-outline-primary ">Read More</a>
+                    </div>
+                </div> <br>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-book fa-3x"></i>
+                        <h3>Academics</h3>
+                        <p>Explore our curriculum and academic programs.</p>
+                        <a href="academics.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div> <br>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h3>Admissions</h3>
+                        <p>Apply today to be part of our vibrant community.</p>
+                        <a href="admissions.html" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <br>
+
+
+    <!-- Section 1 (Image on the Right, Text on the Left) -->
+    <section class="section-one" style="margin-top: 10vh;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Why Rhemafield Schools?</h2>
+                    <p>We are committed to providing an environment that nurtures growth, leadership, and academic excellence for students of all ages.</p>
+                </div>
+                <div class="col-md-6">
+                    <img style="height: 70vh; border-radius: 70px 250px 70px;" src="../new/assets/image/Free Vector _ Orange question mark background with text space.jpg" alt="School Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+     <!-- Section 2 (Image on the Left, Text on the Right) -->
+     <section class="section-two ">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img style="height: 80vh; border-radius: 60px 280px 50px" src="../new/assets/image/3D welcome back to school social media post Welcome back to school banner school background image _ Premium AI-generated PSD.jpg" alt="School Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Mission</h2>
+                    <p>At Rhemafield Schools, we believe in molding well-rounded individuals who will thrive in the modern world. We focus on creativity, teamwork, and academic rigor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+
+<section class="header2">
+    <div class="container2" 
+    style="
+    background-image: linear-gradient(to right bottom,
+     hsla(246, 89%, 50%, 0.801),
+     hsla(180, 88%, 47%, 0.801)),
+      url(../new/assets/image/WhatsApp\ Image\ 2024-10-05\ at\ 8.11.08\ AM.jpeg);
+    height: 75vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+    ">
+
+    <div class="text-box" 
+    style="position: absolute;  
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ">
+        <h1 class="heading2-primary"
+
+         style="color:
+        #fff;
+        text-transform: uppercase;">
+
+        <span class="heading2-primary-main" 
+        style="display: block;
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 32px;
+        ;">Education</span>
+        <br>
+
+        <span class="heading2-primary-sub" 
+        
+        style="color: #fff;
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 15px;">At it's best quality</span>
+        </h1> 
+
+
+    </div>
+     
+    </div>
+</section>
+<!-- Cards Section -->
+<section class="card-section" style="opacity: 9;">
+    <!-- Card 1: Nursery School -->
+    <div class="card-container" id="card1">
+        <div class="card">
+            <!-- Front of the card -->
+            <div class="card-front">
+                <img src="https://via.placeholder.com/100" alt="Nursery Image">
+                <h3>Nursery School</h3>
+                <button class="btn-flip" onclick="flipCard('card1')">See Fees</button>
+            </div>
+            <!-- Back of the card -->
+            <div class="card-back">
+                <h3>Nursery Fees</h3>
+                <p>Annual Fees: ₦150,000</p>
+                <button class="btn-back" onclick="flipCard('card1')">Flip Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: Primary School -->
+    <div class="card-container" id="card2">
+        <div class="card">
+            <!-- Front of the card -->
+            <div class="card-front">
+                <img src="https://via.placeholder.com/100" alt="Primary Image">
+                <h3>Primary School</h3>
+                <button class="btn-flip" onclick="flipCard('card2')">See Fees</button>
+            </div>
+            <!-- Back of the card -->
+            <div class="card-back">
+                <h3>Primary Fees</h3>
+                <p>Annual Fees: ₦200,000</p>
+                <button class="btn-back" onclick="flipCard('card2')">Flip Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3: Admission Write-up -->
+    <div class="card-container" id="card3">
+        <div class="card">
+            <!-- Front of the card -->
+            <div class="card-front">
+                <img src="https://via.placeholder.com/100" alt="Admission Image">
+                <h3>Admissions</h3>
+                <button class="btn-flip" onclick="flipCard('card3')">More Info</button>
+            </div>
+            <!-- Back of the card -->
+            <div class="card-back">
+                <h3>Ready to Join Us?</h3>
+                <p>Apply today and start your journey at Rhemafield Schools!</p>
+                <button class="btn-back" onclick="window.location.href='admissions.html'">Apply Now</button> 
+                <br>
+                <button class="btn-back" onclick="flipCard('card3')">Flip Back</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Rhemafield Schools. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    // Function to flip card
+    function flipCard(cardId) {
+        const card = document.getElementById(cardId).querySelector('.card');
+        card.classList.toggle('flip');
+    }
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/new/assets/js/scripts.js"></script>
+</body>
+</html>
+
